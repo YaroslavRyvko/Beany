@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beany | Online Accounting | Xero | Tax Advice</title>
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="icon" type="image/png" sizes="512x512" href="src/images/favicon.png" />
+</head>
+
+<body>
+    <div class="cookies">
+        <p class="text-m">
+            This website stores cookies on your computer. These cookies are used to improve your website experience and provide more personalized services to you, both on this website and through other media. To find out more about the cookies we use, see our Privacy Policy.
+        </p>
+        <p class="text-m">
+            We won't track your information when you visit our site. But in order to comply with your preferences, we'll have to use just one tiny cookie so that you're not asked to make this choice again.
+        </p>
+        <div class="cookies__btns">
+            <button id="accept-cookies-btn" class="cta-solid-lightblue ">Accept</button>
+            <button id="decline-cookies-btn" class="cta-transparent-lightblue ">Decline</button>
+        </div>
+      </div>
+    <div class="promo">
+        <p class="promo__text">
+            📣 Not a Beany customer yet?
+            <a href="#">Ask us about our Xero health check offer</a> 😃
+        </p>
+    </div>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__burger-btn">
+                <img src="src/images/burger-menu.svg" alt="burger-menu" />
+            </div>
+            <div class="header__logo-wrapper">
+                <a href="/" class="header__logo">
+                    <img src="src/images/logo.svg" alt="logo" />
+                </a>
+            </div>
+            <nav class="header__navigation-desktop">
+                <ul class="header__menu">
+                    <li class="menu-item has-dropdown">
+                        Services
+                        <div class="sub-menu">
+                            <div class="sub-menu__column">
+                                <span class="sub-menu__title"> Accounting packages </span>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Businesses</span>
+                                    <span class="sub-menu__link-text">Stay compliant and thrive with our core package</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Sole traders and contractors</span>
+                                    <span class="sub-menu__link-text">Packages for sole traders, contractors &
+                                        freelancers</span>
+                                </a>
+                            </div>
+                            <div class="sub-menu__column">
+                                <span class="sub-menu__title"> Accounting extras </span>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Xero services</span>
+                                    <span class="sub-menu__link-text">From setting your subscription to training and
+                                        optimisation</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Bookkeeping</span>
+                                    <span class="sub-menu__link-text">Give yourself the gift of less admin, and
+                                        headaches!</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Starter pack</span>
+                                    <span class="sub-menu__link-text">Set up right and stay on track</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="#">About Beany</a></li>
+                    <li class="menu-item"><a href="#">Pricing</a></li>
+                    <li class="menu-item has-dropdown">
+                        Resources
+                        <div class="sub-menu">
+                            <div class="sub-menu__column">
+                                <span class="sub-menu__title"> Resources </span>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Guides, checklists and templates</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Key dates</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Client stories</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">News and updates</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Support centre</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="header__navigation-mobile">
+                <div class="navigation-mobile__head">
+                    <div class="header__close-btn">
+                        <img src="src/images/close-btn.svg" alt="close" />
+                    </div>
+                    <div class="header__logo-wrapper">
+                        <a href="/" class="header__logo">
+                            <img src="src/images/logo.svg" alt="logo" />
+                        </a>
+                    </div>
+                    <a href="#">Log In</a>
+                </div>
+                <ul class="header__menu">
+                    <li class="menu-item"><a href="#">Home</a></li>
+                    <li class="menu-item has-dropdown">
+                        Services
+                        <div class="sub-menu">
+                            <button class="sub-menu__back-link">
+                                Services
+                                <span class="back-link__icon"></span>
+                            </button>
+                            <div class="sub-menu__column">
+                                <span class="sub-menu__title"> Accounting packages </span>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Businesses</span>
+                                    <span class="sub-menu__link-text">Stay compliant and thrive with our core package</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Sole traders and contractors</span>
+                                    <span class="sub-menu__link-text">Packages for sole traders, contractors &
+                                        freelancers</span>
+                                </a>
+                            </div>
+                            <div class="sub-menu__column">
+                                <span class="sub-menu__title"> Accounting extras </span>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Xero services</span>
+                                    <span class="sub-menu__link-text">From setting your subscription to training and
+                                        optimisation</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Bookkeeping</span>
+                                    <span class="sub-menu__link-text">Give yourself the gift of less admin, and
+                                        headaches!</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Starter pack</span>
+                                    <span class="sub-menu__link-text">Set up right and stay on track</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="#">About Beany</a></li>
+                    <li class="menu-item"><a href="#">Pricing</a></li>
+                    <li class="menu-item has-dropdown">
+                        Resources
+                        <div class="sub-menu">
+                            <button class="sub-menu__back-link">
+                                Resources
+                                <span class="back-link__icon"></span>
+                            </button>
+                            <div class="sub-menu__column">
+                                <span class="sub-menu__title"> Resources </span>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Guides, checklists and templates</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Key dates</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Client stories</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">News and updates</span>
+                                </a>
+                                <a href="#" class="sub-menu__link">
+                                    <span class="sub-menu__link-title">Support centre</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="#">Contact</a></li>
+                </ul>
+                <a href="#" class="cta-solid-orange">Sign up free</a>
+            </nav>
+            <div class="header__links">
+                <a href="#">Log in</a>
+                <a href="#" class="cta-solid-orange">Sign up free</a>
+            </div>
+            <div class="mask"></div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero-section">
+            <div class="site-container">
+                <div class="hero-section__wrapper">
+                    <div class="hero-section__info">
+                        <p class="hero-section__label label">HAPPY <span class="current-day"></span></p>
+                        <h1 class="hero-section__title title-l">
+                            Right here for you. Your accounting pain relief.
+                        </h1>
+                        <p class="hero-section__description text-l">
+                            Got better things to do than stress out about accounting? We
+                            hope so. We’re Beany, and we’re right here beside you to share
+                            the weight and take the hassle out of it.
+                        </p>
+                        <div class="hero-section__links">
+                            <a href="#" class="cta-solid-orange">Sign up free</a>
+                            <a href="#" class="cta-transparent-orange">Contact us</a>
+                        </div>
+                        <div class="hero-section__partner">
+                            <p class="hero-section__partner-label label">
+                                XERO PLATINUM PARTNER
+                            </p>
+                            <div class="hero-section__partner-logos">
+                                <img src="src/images/logos.svg" alt="partner-logos" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-section__image">
+                        <img src="src/images/Hero-garden-centre-owners.webp" alt="hero-image" />
+                    </div>
+                    <div class="hero-section__background-top">
+                        <svg width="2494" height="2657" viewBox="0 0 2494 2657" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1066.31 2598.48C571.466 2501.84 141.252 2096.8 31.8495 1600.87C-167.617 767.878 615.294 -141.426 1435.4 18.7899C1532.97 37.8589 1630.97 71.9854 1728.03 123.28C2032.88 300.363 2204.65 707.18 2062.26 1029.68C2018.65 1128.4 1948.69 1218.96 1937.22 1326.27C1925.75 1433.59 2045.79 1454.47 2319.49 1589.82C2507.89 1683 2539.58 1959.18 2431.51 2139.51C1923.96 2881.01 1134.09 2611.74 1066.3 2598.48" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div class="hero-section__background-bot">
+                        <svg width="2494" height="2657" viewBox="0 0 2494 2657" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1066.31 2598.48C571.466 2501.84 141.252 2096.8 31.8495 1600.87C-167.617 767.878 615.294 -141.426 1435.4 18.7899C1532.97 37.8589 1630.97 71.9854 1728.03 123.28C2032.88 300.363 2204.65 707.18 2062.26 1029.68C2018.65 1128.4 1948.69 1218.96 1937.22 1326.27C1925.75 1433.59 2045.79 1454.47 2319.49 1589.82C2507.89 1683 2539.58 1959.18 2431.51 2139.51C1923.96 2881.01 1134.09 2611.74 1066.3 2598.48" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brands-section">
+            <div class="site-container">
+                <div class="brands-section__wrapper">
+                    <h3 class="brands-section__title title-s">
+                        Trusted by more than 4,000 businesses, large and small
+                    </h3>
+                    <div class="brands-section__logos">
+                        <a href="#">
+                            <img src="src/images/brand1.webp" alt="brand-logo" />
+                        </a>
+                        <a href="#">
+                            <img src="src/images/brand2.webp" alt="brand-logo" />
+                        </a>
+                        <a href="#">
+                            <img src="src/images/brand3.webp" alt="brand-logo" />
+                        </a>
+                        <a href="#">
+                            <img src="src/images/brand4.webp" alt="brand-logo" />
+                        </a>
+                        <a href="#">
+                            <img src="src/images/brand5.webp" alt="brand-logo" />
+                        </a>
+                        <a href="#">
+                            <img src="src/images/brand6.webp" alt="brand-logo" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="image-text-section">
+            <div class="site-container">
+                <div class="image-text-section__wrapper">
+                    <div class="image-text-section__image">
+                        <img src="src/images/girl.webp" alt="image">
+                        <p class="image-text-section__image-label">Meet Charlotte, your potential Beany Accountant</p>
+                    </div>
+                    <div class="image-text-section__info">
+                        <p class="image-text-section__label label">FRIENDLY SUPPORT</p>
+                        <h3 class="image-text-section__title title-m">Great value support and advice without the jargon</h3>
+                        <ul class="image-text-section__list">
+                            <li class="list-item text-l">Your own designated UK-based accountant, assigned to you by hand</li>
+                            <li class="list-item text-l">Unlimited day-to-day support for all your accounting questions</li>
+                            <li class="list-item text-l">Real people who care and are there for you when you need us</li>
+                        </ul>
+                        <div class="image-text-section__links">
+                            <a href="#" class="cta-transparent-lightblue">Sign up free</a>
+                            <a href="#">Meet the Beany team</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="image-text-section">
+            <div class="site-container">
+                <div class="image-text-section__wrapper">
+                    <div class="image-text-section__info">
+                        <p class="image-text-section__label label">FIXED MONTHLY FEES, NO SURPRISES</p>
+                        <h3 class="image-text-section__title title-m">Get your hands on all this for one simple monthly payment</h3>
+                        <div class="image-text-section__accordion accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-btn text-l">
+                                    All your annual compliances sorted
+                                    <span class="accordion-icon"></span>
+                                </button>
+                                <div class="accordion-content text-m">
+                                    <ul>
+                                        <li>Reviewing your Xero file</li>
+                                        <li>Year-end tax adjustments</li>
+                                        <li>Completing and filing annual financial statements with Companies House</li>
+                                        <li>Completing and filing your entity tax returns plus returns for two shareholders</li>
+                                        <li>Completing and filing your Companies House confirmation statement (annual return)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-btn text-l">
+                                    Seriously reduce your taxes
+                                    <span class="accordion-icon"></span>
+                                </button>
+                                <div class="accordion-content text-m">
+                                    <ul>
+                                        <li>Annual review of your tax structure</li>
+                                        <li>Tax minimiser - our painless online questionnaire</li>
+                                        <li>A Beany accountant working on reducing your tax</li>
+                                        <li>Advising on income tax payments on accounts</li>
+                                        <li>Organising tax refunds/credits</li>
+                                        <li>Ensuring HMRC assesses your tax correctly</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-btn text-l">
+                                    Goal setting and advice
+                                    <span class="accordion-icon"></span>
+                                </button>
+                                <div class="accordion-content text-m">
+                                    <ul>
+                                        <li>First chat with your Beany accountant</li>
+                                        <li>Set your goals</li>
+                                        <li>Link to budget (if you've got one)</li>
+                                        <li>Link Xero to Beany</li>
+                                        <li>Year-end call where we update your goals for the following year</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-btn text-l">
+                                    Tons of proactive info and alerts
+                                    <span class="accordion-icon"></span>
+                                </button>
+                                <div class="accordion-content text-m">
+                                    <ul>
+                                        <li>Alerts on unpaid tax, upcoming tax and unfiled returns</li>
+                                        <li>Beany will show you if you're not tracking to budget</li>
+                                        <li>Essential tips and knowledge made for your business type and stage</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-btn text-l">
+                                    Unlimited support and chats
+                                    <span class="accordion-icon"></span>
+                                </button>
+                                <div class="accordion-content text-m">
+                                    <ul>
+                                        <li>Speak to a human through our helpdesk</li>
+                                        <li>Access to your UK-based accountant</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-text-section__links">
+                            <a href="#" class="cta-transparent-lightblue">Sign up free</a>
+                            <a href="#">Pricing</a>
+                        </div>
+                    </div>
+                    <div class="image-text-section__image">
+                        <img src="src/images/guys.webp" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <div class="site-container">
+                <div class="testimonials-section__wrapper">
+                    <div class="testimonials-section__background">
+                        <svg width="1440" height="744" viewBox="0 0 1440 744" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.1" d="M1397.35 2260.54C2929.68 1919.62 3059.7 430.33 1945.3 146.502C1539.95 72.298 1121.57 348.528 720.843 213.103C585.568 166.665 469.516 74.3999 333.68 29.6844C211.199 -10.6384 80.0315 -7.04804 -43.014 29.8734C-191.445 74.4115 -328.065 167.45 -423.364 290.376C-969.746 1055.35 -287.389 2132.74 560.919 2297.27C837.434 2359 1126.22 2341.87 1397.33 2260.52" fill="#FF634F"></path>
+                        </svg>
+                    </div>
+                    <div class="testimonials-section__info">
+                        <p class="testimonials-section__label label">HAPPY CUSTOMERS</p>
+                        <h3 class="testimonials-section__title title-m">Hear from our customers</h3>
+                        <p class="testimonials-section__description text-m">
+                            Get the low down on Beany from the people who count.
+                        </p>
+                    </div>
+                    <div class="testimonials-section__swiper">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-card__content">
+                                            <div class="testimonial-card__qoute-icon">
+                                                <img src="src/images/qoute.svg" alt="qoute-icon">
+                                            </div>
+                                            <div class="testimonial-card__qoute-text text-m">
+                                                Accounting was really daunting. Now, it’s booked in my schedule, but it's something I don’t stress about anymore. I have the peace of mind to focus on my business as Alaina gives me reassurance and support for all my questions. I feel as if I’m learning how to manage my accounting as I continue to work with Beany - which is ultimately what I’m paying fo...
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card__details">
+                                            <div class="testimonial-card__customer-image">
+                                                <img src="src/images/user1.webp" alt="user-image">
+                                            </div>
+                                            <div class="testimonial-card__customer-data">
+                                                <span class="testimonial-card__customer-name title-s">Lane Pedersen</span>
+                                                <span class="testimonial-card__customer-position">Founder, CLDWASH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-card__content">
+                                            <div class="testimonial-card__qoute-icon">
+                                                <img src="src/images/qoute.svg" alt="qoute-icon">
+                                            </div>
+                                            <div class="testimonial-card__qoute-text text-m">
+                                                Big shout out to Chantal, my amazing talented tax accountant. She’s got a huge amount
+                                                of patience, (which she needed with me as a client) and great technical understanding. I’ve appreciated your prompt
+                                                responses and actions. Thank you for all your support over the last year in getting out my annual accounts.
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card__details">
+                                            <div class="testimonial-card__customer-image">
+                                                <img src="src/images/user2.webp" alt="user-image">
+                                            </div>
+                                            <div class="testimonial-card__customer-data">
+                                                <span class="testimonial-card__customer-name title-s">Pete Young</span>
+                                                <span class="testimonial-card__customer-position">Commercial Contracting</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-card__content">
+                                            <div class="testimonial-card__qoute-icon">
+                                                <img src="src/images/qoute.svg" alt="qoute-icon">
+                                            </div>
+                                            <div class="testimonial-card__qoute-text text-m">
+                                                We spoke to lots of firms, looking for someone who understood small business and would take the time to get to know us. Julian solidified our choice; he’s a good listener, he didn’t talk over me, and offered valuable information. I always get a friendly response from the support team straight away and get extra info that I actually need. I feel supporte...
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card__details">
+                                            <div class="testimonial-card__customer-image">
+                                                <img src="src/images/user3.webp" alt="user-image">
+                                            </div>
+                                            <div class="testimonial-card__customer-data">
+                                                <span class="testimonial-card__customer-name title-s">Karen Van Huffel</span>
+                                                <span class="testimonial-card__customer-position">Director, Think Resourcing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-card__content">
+                                            <div class="testimonial-card__qoute-icon">
+                                                <img src="src/images/qoute.svg" alt="qoute-icon">
+                                            </div>
+                                            <div class="testimonial-card__qoute-text text-m">
+                                                When I need accounting support, I get it. Beany takes the pressure off me; they take away all the grind work and make the process efficient. You’re paying a reasonable rate and getting the best connection. It’s hard to find accountants that work and understand the not-for-profit space, so I always say check out Beany.
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card__details">
+                                            <div class="testimonial-card__customer-image">
+                                                <img src="src/images/user4.webp" alt="user-image">
+                                            </div>
+                                            <div class="testimonial-card__customer-data">
+                                                <span class="testimonial-card__customer-name title-s">Hadyn Smith</span>
+                                                <span class="testimonial-card__customer-position">Crimestoppers</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-card__content">
+                                            <div class="testimonial-card__qoute-icon">
+                                                <img src="src/images/qoute.svg" alt="qoute-icon">
+                                            </div>
+                                            <div class="testimonial-card__qoute-text text-m">
+                                                Beany means I don’t have to deal with the headache of bookkeeping and accounting. I can go in at any time and see how we’re doing, whereas typical accountants wouldn’t interact with you until year-end. Everything is straightforward and uncomplicated. With Beany, you describe what you need and you can get it.
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card__details">
+                                            <div class="testimonial-card__customer-image">
+                                                <img src="src/images/user5.webp" alt="user-image">
+                                            </div>
+                                            <div class="testimonial-card__customer-data">
+                                                <span class="testimonial-card__customer-name title-s">Peter Wachtell</span>
+                                                <span class="testimonial-card__customer-position">Group Healthcare</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-card__content">
+                                            <div class="testimonial-card__qoute-icon">
+                                                <img src="src/images/qoute.svg" alt="qoute-icon">
+                                            </div>
+                                            <div class="testimonial-card__qoute-text text-m">
+                                                Accounting is like a chore to me. Using Beany means I’m still in control, but when I have a question it gets answered straight away. It’s all so seamless. Even though Beany is all online, I have a connection with my accountant, Rebecca. She makes me feel like family. Beany is easy, hassle-free, and always a step ahead.
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card__details">
+                                            <div class="testimonial-card__customer-image">
+                                                <img src="src/images/user6.webp" alt="user-image">
+                                            </div>
+                                            <div class="testimonial-card__customer-data">
+                                                <span class="testimonial-card__customer-name title-s">Enny Benzonelli</span>
+                                                <span class="testimonial-card__customer-position">Designer, Enny Benzonelli Ltd</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-card__content">
+                                            <div class="testimonial-card__qoute-icon">
+                                                <img src="src/images/qoute.svg" alt="qoute-icon">
+                                            </div>
+                                            <div class="testimonial-card__qoute-text text-m">
+                                                Getting set up on Beany was simple and painless, they even took care of the switch for us. Our accountant Jenny never hesitates to get involved or come up with solutions or advice for new or different scenarios that seem to regularly pop up. Unlike experiences with larger firms, we’ve always felt we get value for money; Beany isn’t low touch, low cost.
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card__details">
+                                            <div class="testimonial-card__customer-image">
+                                                <img src="src/images/user7.webp" alt="user-image">
+                                            </div>
+                                            <div class="testimonial-card__customer-data">
+                                                <span class="testimonial-card__customer-name title-s">Lachie Campbell</span>
+                                                <span class="testimonial-card__customer-position">Director, Latitude Commodities</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-card__content">
+                                            <div class="testimonial-card__qoute-icon">
+                                                <img src="src/images/qoute.svg" alt="qoute-icon">
+                                            </div>
+                                            <div class="testimonial-card__qoute-text text-m">
+                                                When I started InfluenceWorks, I felt confident within my industry knowledge, but super under confident around the financial side of things. My Beany accountant went above and beyond, giving me step by step instructions on everything I needed to set up and even giving me super helpful tips about things outside of the financial realm.
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card__details">
+                                            <div class="testimonial-card__customer-image">
+                                                <img src="src/images/user8.webp" alt="user-image">
+                                            </div>
+                                            <div class="testimonial-card__customer-data">
+                                                <span class="testimonial-card__customer-name title-s">Charlotte Caines</span>
+                                                <span class="testimonial-card__customer-position">Creative Director, InfluenceWorks</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonials-section__scrollbar">
+                                <div class="swiper-scrollbar-drag"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="articles-section">
+            <div class="site-container">
+                <div class="articles-section__wrapper">
+                    <div class="articles-section__top">
+                        <div class="articles-section__info">
+                            <p class="articles-section__label label">50+ RESOURCES</p>
+                            <h3 class="articles-section__title title-m">Latest Beany resources</h3>
+                            <p class="articles-section__description text-m">
+                                We're a one-stop shop. Check out our extensive library of content to help you with all things business. Missed something you'd like to know about? Just ask!
+                            </p>
+                        </div>
+                        <div class="articles-section__links">
+                            <a href="#" class="cta-transparent-lightblue">View all resources</a>
+                        </div>
+                    </div>
+                    <div class="articles-section__swiper">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="article-card">
+                                        <div class="article-card__image">
+                                            <a href="#">
+                                                <img src="src/images/article1.webp" alt="article-image">
+                                            </a>
+                                            <p class="article-card__category label">BUSINESS ADVICE</p>
+                                        </div>
+                                        <div class="article-card__info">
+                                            <a href="#" class="article-card__title">Kickstart your financial year with these 7 tax tips</a>
+                                            <span class="article-card__date label">April, 2023</span>
+                                            <p class="article-card__excerpt text-m">
+                                                The start of the financial year can be a great opportunity to focus on your goals as a business owner, so we've put...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="article-card__read-more text-m">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="article-card">
+                                        <div class="article-card__image">
+                                            <a href="#">
+                                                <img src="src/images/article1.webp" alt="article-image">
+                                            </a>
+                                            <p class="article-card__category label">BUSINESS ADVICE</p>
+                                        </div>
+                                        <div class="article-card__info">
+                                            <a href="#" class="article-card__title">Kickstart your financial year with these 7 tax tips</a>
+                                            <span class="article-card__date label">April, 2023</span>
+                                            <p class="article-card__excerpt text-m">
+                                                The start of the financial year can be a great opportunity to focus on your goals as a business owner, so we've put...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="article-card__read-more text-m">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="article-card">
+                                        <div class="article-card__image">
+                                            <a href="#">
+                                                <img src="src/images/article1.webp" alt="article-image">
+                                            </a>
+                                            <p class="article-card__category label">BUSINESS ADVICE</p>
+                                        </div>
+                                        <div class="article-card__info">
+                                            <a href="#" class="article-card__title">Kickstart your financial year with these 7 tax tips</a>
+                                            <span class="article-card__date label">April, 2023</span>
+                                            <p class="article-card__excerpt text-m">
+                                                The start of the financial year can be a great opportunity to focus on your goals as a business owner, so we've put...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="article-card__read-more text-m">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="article-card">
+                                        <div class="article-card__image">
+                                            <a href="#">
+                                                <img src="src/images/article1.webp" alt="article-image">
+                                            </a>
+                                            <p class="article-card__category label">BUSINESS ADVICE</p>
+                                        </div>
+                                        <div class="article-card__info">
+                                            <a href="#" class="article-card__title">Kickstart your financial year with these 7 tax tips</a>
+                                            <span class="article-card__date label">April, 2023</span>
+                                            <p class="article-card__excerpt text-m">
+                                                The start of the financial year can be a great opportunity to focus on your goals as a business owner, so we've put...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="article-card__read-more text-m">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="article-card">
+                                        <div class="article-card__image">
+                                            <a href="#">
+                                                <img src="src/images/article1.webp" alt="article-image">
+                                            </a>
+                                            <p class="article-card__category label">BUSINESS ADVICE</p>
+                                        </div>
+                                        <div class="article-card__info">
+                                            <a href="#" class="article-card__title">Kickstart your financial year with these 7 tax tips</a>
+                                            <span class="article-card__date label">April, 2023</span>
+                                            <p class="article-card__excerpt text-m">
+                                                The start of the financial year can be a great opportunity to focus on your goals as a business owner, so we've put...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="article-card__read-more text-m">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="article-card">
+                                        <div class="article-card__image">
+                                            <a href="#">
+                                                <img src="src/images/article1.webp" alt="article-image">
+                                            </a>
+                                            <p class="article-card__category label">BUSINESS ADVICE</p>
+                                        </div>
+                                        <div class="article-card__info">
+                                            <a href="#" class="article-card__title">Kickstart your financial year with these 7 tax tips</a>
+                                            <span class="article-card__date label">April, 2023</span>
+                                            <p class="article-card__excerpt text-m">
+                                                The start of the financial year can be a great opportunity to focus on your goals as a business owner, so we've put...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="article-card__read-more text-m">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="articles-section__scrollbar">
+                                <div class="swiper-scrollbar-drag"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles-section__links">
+                        <a href="#" class="cta-transparent-lightblue">View all resources</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-section">
+            <div class="site-container">
+                <p class="text-m">
+                    We're a team of online accountants specialising in small business accounting in the United Kingdom. With more than 10 years of experience in various industries, we've helped thousands of small businesses succeed. We're your one-stop-shop for your accounting and tax needs; from bookkeeping, tax returns, tax minimisation, to business advisory and more. On top of that, we're a Xero Platinum Partner. We make sure your small business accounting needs are well taken care of.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="site-container">
+            <div class="footer__signup">
+                <div class="footer__signup-info">
+                    <h2 class="footer__signup-title title-m">Ready to join the Beany family?</h2>
+                    <p class="footer__signup-description text-m">
+                        Ready to take the next step to pain-free accounting? Join Beany today or get in touch with us for a chat.
+                    </p>
+                </div>
+                <div class="footer__signup-links">
+                    <a href="#" class="cta-solid-yellow">Sign up free</a>
+                    <a href="#" class="cta-transparent-white">Get in touch</a>
+                </div>
+            </div>
+            <div class="footer__details">
+                <div class="footer__details-info">
+                    <div class="footer__logo-wrapper">
+                        <a href="/" class="footer__logo">
+                            <img src="src/images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <p class="footer__details-description text-m">
+                        Taking the pain out of accounting so you and your business can concentrate on slaying the world (or whatever your plans happen to be).
+                    </p>
+                    <div class="footer__details-partners">
+                        <img src="src/images/partner2.webp" alt="partner-logo">
+                        <img src="src/images/partner1.webp" alt="partner-logo">
+                    </div>
+                </div>
+                <div class="footer__navigation accordion">
+                    <div class="footer__navigation-column">
+                        <button class="footer__navigation-title accordion-btn">
+                            Services
+                            <span class="accordion-icon"></span>
+                        </button>
+                        <ul class="footer__navigation-list">
+                            <li class="footer__navigation-item">
+                                <a href="#">Business accounting</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Sole traders & contractors</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Xero services</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Bookkeeping</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Starter pack</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__navigation-column">
+                        <button class="footer__navigation-title accordion-btn">
+                            Resources
+                            <span class="accordion-icon"></span>
+                        </button>
+                        <ul class="footer__navigation-list ">
+                            <li class="footer__navigation-item">
+                                <a href="#">Key dates</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Guides, checklists & templates</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Client stories</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">News & updates</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Support centre</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__navigation-column">
+                        <button class="footer__navigation-title accordion-btn">
+                            Company
+                            <span class="accordion-icon"></span>
+                        </button>
+                        <ul class="footer__navigation-list">
+                            <li class="footer__navigation-item">
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Log In</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Partners</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__navigation-column">
+                        <button class="footer__navigation-title accordion-btn">
+                            Support
+                            <span class="accordion-icon"></span>
+                        </button>
+                        <ul class="footer__navigation-list">
+                            <li class="footer__navigation-item">
+                                <a href="#">0808 164 3905</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">support@beany.uk</a>
+                            </li>
+                            <li class="footer__navigation-item">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-text">
+                    <p>© 2023 Beany UK Ltd. All rights reserved.</p>
+                    <i></i>
+                    <ul class="footer__policy-links">
+                        <li> <a href="#">Privacy Policy</a> </li>
+                        <li> <a href="#"> Terms & Conditions </a> </li>
+                        <li> <a href="#">Data Processing Agreement</a> </li>
+                    </ul>
+                </div>
+                <div class="footer__socials">
+                    <a href="#">
+                        <img src="src/images/facebook.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="src/images/instagram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="src/images/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>

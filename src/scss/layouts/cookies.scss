@@ -1,0 +1,40 @@
+.cookies{
+    display: none;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #919191;
+    background-color: var(--color-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    @media screen and (max-width:1020px) {
+        padding: 14px;
+    }
+
+    P{  
+        line-height: 18px;
+        margin-bottom: 12px;
+    }
+
+    &__btns{
+        padding: 6px;
+        margin-right: 72px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        @media screen and (max-width:1020px) {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        button{
+            font-weight: 400;
+        }
+    }
+}

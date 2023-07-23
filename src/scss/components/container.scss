@@ -1,0 +1,18 @@
+.site-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main{
+  overflow: hidden;
+}
+
+body{
+  background-color: var(--color-white);
+}
+
+.scroll-disabled{
+  overflow: hidden;
+}

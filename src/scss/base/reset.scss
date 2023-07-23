@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}

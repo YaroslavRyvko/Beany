@@ -1,0 +1,43 @@
+.brands-section {
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 60px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    color: var(--color-darkblue);
+
+    @media screen and (max-width: 760px) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    a {
+      height: 35px;
+      width: fit-content;
+
+      @media screen and (max-width: 760px) {
+        width: 25%;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
